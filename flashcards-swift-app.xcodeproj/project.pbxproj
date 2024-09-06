@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		977078F12C8B860D008BF8FF /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977078F02C8B860D008BF8FF /* FlashcardView.swift */; };
 		97FCC9122C88D056001F2C4C /* flashcards_swift_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FCC9112C88D056001F2C4C /* flashcards_swift_appApp.swift */; };
 		97FCC9142C88D056001F2C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FCC9132C88D056001F2C4C /* ContentView.swift */; };
 		97FCC9162C88D058001F2C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FCC9152C88D058001F2C4C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		977078F02C8B860D008BF8FF /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		97FCC90E2C88D056001F2C4C /* flashcards-swift-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flashcards-swift-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FCC9112C88D056001F2C4C /* flashcards_swift_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashcards_swift_appApp.swift; sourceTree = "<group>"; };
 		97FCC9132C88D056001F2C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				97FCC9112C88D056001F2C4C /* flashcards_swift_appApp.swift */,
 				97FCC9132C88D056001F2C4C /* ContentView.swift */,
+				977078F02C8B860D008BF8FF /* FlashcardView.swift */,
 				97FCC9152C88D058001F2C4C /* Assets.xcassets */,
 				97FCC9172C88D058001F2C4C /* flashcards_swift_app.entitlements */,
 				97FCC9182C88D058001F2C4C /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FCC9142C88D056001F2C4C /* ContentView.swift in Sources */,
+				977078F12C8B860D008BF8FF /* FlashcardView.swift in Sources */,
 				97FCC9122C88D056001F2C4C /* flashcards_swift_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

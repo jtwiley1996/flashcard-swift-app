@@ -1,49 +1,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Sample flashcards for now
-    @State private var flashcards = [
+    // Sample flashcards data
+    let flashcards = [
         Flashcard(question: "What is Swift?", answer: "A powerful programming language for iOS development."),
-        Flashcard(question: "What is SwiftUI?", answer: "A modern UI framework by Apple."),
-        Flashcard(question: "Test", answer: "Test.")
+        Flashcard(question: "What is SwiftUI?", answer: "A framework for building user interfaces on Apple platforms."),
+        Flashcard(question: "What is Xcode?", answer: "An integrated development environment for macOS.")
     ]
     
     var body: some View {
-        NavigationView {
-            List(flashcards) { flashcard in
-                NavigationLink(destination: FlashcardDetailView(flashcard: flashcard)) {
-                    Text(flashcard.question)
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 300))], spacing: 20) {
+                ForEach(flashcards) { flashcard in
+                    FlashcardView(flashcard: flashcard)
                 }
             }
-            .navigationTitle("Flashcards")
-            .navigationBarItems(trailing: Button(action: {
-                // Action to add new flashcard
-            }) {
-                Image(systemName: "plus")
-            })
+            .padding()
         }
     }
 }
 
-struct Flashcard: Identifiable {
-    var id = UUID()
-    var question: String
-    var answer: String
-}
-
-struct FlashcardDetailView: View {
-    let flashcard: Flashcard
-    
-    var body: some View {
-        VStack {
-            Text(flashcard.question)
-                .font(.headline)
-                .padding()
-            
-            Text(flashcard.answer)
-                .font(.subheadline)
-                .padding()
-        }
-        .navigationTitle("Flashcard")
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
